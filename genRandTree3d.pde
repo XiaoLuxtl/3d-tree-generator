@@ -8,7 +8,7 @@ color leaves = color(67, 153,41);
 float ratio = 0.66;
 float lenThresh = 1;
 float rotCt = 0;
-float rotAmt = 0.01;
+float crotAmt = 0.01;
 
 PVector[][] lines = {{}};
 int instance = int(random(10000));
@@ -41,7 +41,7 @@ void draw(){
   
 
 drawTree(rotCt);
-rotCt += rotAmt;
+rotCt += crotAmt;
 }
 
 void newTree(PVector root, PVector rotation, float totlen){
